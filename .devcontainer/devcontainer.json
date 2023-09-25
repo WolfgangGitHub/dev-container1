@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json.
+{
+    "name": "VS Code brisk extension development",
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "editorconfig.editorconfig",
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+				"sswg.swift-lang",
+				"vadimcn.vscode-lldb",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+}
