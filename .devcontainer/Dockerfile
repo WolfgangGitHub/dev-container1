@@ -7,9 +7,9 @@ RUN apt install -y \
 RUN ln -s /usr/lib/llvm-14/lib/python3.10/dist-packages/lldb/* /usr/lib/python3/dist-packages/lldb/
 # swift
 RUN mkdir temp && cd temp && \
-    wget https://download.swift.org/swift-5.7.3-release/ubuntu2204/swift-5.7.3-RELEASE/swift-5.7.3-RELEASE-ubuntu22.04.tar.gz && \
-    tar xvfz swift-5.7.3-RELEASE-ubuntu22.04.tar.gz && \
-    cp -R swift-5.7.3-RELEASE-ubuntu22.04/* / && cd .. 
+    wget https://download.swift.org/swift-5.8.1-release/ubuntu2204/swift-5.8.1-RELEASE/swift-5.8.1-RELEASE-ubuntu22.04.tar.gz && \
+    tar xvfz swift-5.8.1-RELEASE-ubuntu22.04.tar.gz && \
+    cp -R swift-5.8.1-RELEASE-ubuntu22.04/* / && cd .. 
 RUN rm -rf ./temp
 # other packages
 RUN apt install -y clang curl git libfontconfig-dev libgl-dev libxext-dev make nfs-client ninja-build cmake
